@@ -1,7 +1,7 @@
 import "./1_TrainingFormPage.css";
 import vector from "../images/Vector_Line.png";
 import circles from "../images/Group 458.png";
-import { countries, coursesOptions, trainingOptions } from "../Variables";
+import { countries, coursesOptions, trainingOptions } from "../Variables.js";
 import { useState } from "react";
 import Quote_Button from "./Buttons/Quote_Button.jsx";
 import Whatsapp_Button from "./Buttons/Whatsapp_Button.jsx";

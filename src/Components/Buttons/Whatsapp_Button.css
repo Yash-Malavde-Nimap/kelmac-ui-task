@@ -1,22 +1,19 @@
 .whatsapp-button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
   background-color: white;
   color: #6782ff;
-  border: 2px solid #d3e6fd;
+  border: 2px solid #b6c2cf;
+  padding: 10px 24px;
+  font-weight: bold;
+  text-align: left;
+  border-radius: 8px;
+  cursor: pointer;
   transition: ease-in-out 0.2s;
 }
 
 .whatsapp-button:hover {
   background: #d3e6fd;
   color: #1d4ed8;
-}
-
-.whatsapp-button {
-  padding: 10px 24px;
-  font-weight: bold;
-  text-align: left;
-  border-radius: 8px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
 }
