@@ -1,0 +1,132 @@
+.separator {
+  height: 0.8rem;
+  background: #fed639;
+}
+
+.main-body-page-2 {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden; /* Ensures pseudo-element doesn't overflow */
+}
+
+.main-body-page-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/Page_2_BG.png") no-repeat center center;
+  background-size: cover; /* Or contain depending on your preference */
+  filter: grayscale(100%); /* Grayscale effect */
+  z-index: -1; /* Ensure it's behind the content */
+}
+
+.content-container {
+  min-height: 100vh;
+  padding: 5rem 10rem;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), transparent);
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading_page2 {
+  color: black;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.subheading {
+  margin-top: 8px;
+  font-size: 16px; /* text-xl */
+  color: #4b5563; /* text-neutral-600 */
+}
+
+.text-container {
+  width: 650px;
+  margin-top: 32px;
+}
+
+.text-body {
+  font-size: 18px; /* text-xl */
+  text-align: justify;
+  font-weight: normal;
+  /* margin-top: 1rem; */
+}
+
+.list-container {
+  margin: 40px 0;
+  /* margin-left: 24px; */
+}
+
+.list {
+  font-size: 18px; /* text-xl */
+  text-align: justify;
+  font-weight: 600; /* font-semibold */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* list-style-type: disc; */
+}
+
+.list-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 18px;
+}
+
+.list-vector {
+  /* width: 30px; */
+  height: 24px;
+}
+
+.button-container {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.get-quote-btn {
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600; /* font-semibold */
+}
+
+.whatsapp-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: white;
+  color: #6782ff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600; /* font-semibold */
+  border: 2px solid #d3e6fd; /* #D3E6FD */
+}
+
+.top-prog-div {
+  padding-top: 3rem;
+  padding-bottom: 3.5rem;
+}
+
+/* Training Program Section Title */
+.top-prog-heading {
+  font-size: 28px; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  position: relative;
+}
+
+.top-prog-image {
+  position: absolute;
+  top: 3rem; /* top-10 */
+  left: 30px;
+  width: 295.8px; /* w-96 */
+  height: 17px; /* h-4 */
+}

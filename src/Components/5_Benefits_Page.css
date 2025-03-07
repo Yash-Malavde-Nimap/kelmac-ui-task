@@ -1,0 +1,102 @@
+/* BenefitsPage.css */
+.page-5-container {
+  height: fit-content;
+  padding: 0 10rem;
+  /* margin: ; */
+  /* background:rgba(0, 0, 0, 0.714); */
+}
+
+.page-5-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.page-5-header h2 {
+  font-weight: bold;
+  font-size: 2.2rem;
+  position: relative;
+}
+
+.page-5-header h2 img {
+  position: absolute;
+  bottom: -1.2rem;
+  left: 10rem;
+  height: 1rem;
+}
+
+
+.page-5-cards-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2.5rem;
+  /* margin-top: 2.5rem; */
+}
+
+.page-5-card {
+  padding: 1.5rem;
+  width: 205.2px;
+  overflow: hidden;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.page-5-card img {
+  height: 2.5rem;
+}
+
+.page-5-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.page-5-card .page-5-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.page-5-card .page-5-subtitle {
+  font-size: 1rem;
+}
+
+.page-5-card.active {
+  height: 200px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.page-5-card.inactive {
+  height: 180px;
+  border-radius: 12px;
+}
+
+.page-5-description {
+  color: white;
+  font-weight: normal;
+  width: 1197px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  margin-bottom: 6rem;
+}
+
+.page-5-description.page-5-rounded-right {
+  border-top-right-radius: 12px;
+}
+
+.page-5-description.page-5-rounded-left {
+  border-top-left-radius: 12px;
+}
+
+.page-5-description.default {
+  border-radius: 12px;
+}

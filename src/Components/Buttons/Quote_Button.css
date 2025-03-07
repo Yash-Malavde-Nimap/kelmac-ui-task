@@ -1,0 +1,22 @@
+.quote-button {
+  background: #6782ff;
+  width: 150px;
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.quote-button:hover {
+  background: #1d4ed8;
+}
+
+.quote-button{
+  padding: 12px 24px;
+  font-weight: bold;
+  text-align: left;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

@@ -1,0 +1,101 @@
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  color: black;
+  padding: 0 10rem; /* px-32 */
+  width: 100%;
+  /* height: 100px; */
+  padding-top: 1rem; /* py-6 */
+  padding-bottom: 1rem; /* py-6 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-2xl */
+  z-index: 999;
+  opacity: 95%;
+}
+
+.kelmac-logo {
+  height: 40px;
+}
+
+.navbar-container {
+  width: 100%;
+}
+
+.navbar-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 600; /* font-semibold */
+}
+
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  gap: 1.5rem; /* space-x-6 */
+}
+
+.navbar-link {
+  font-weight: 600; /* font-semibold */
+}
+
+.phone-number {
+  color: #588dcf; /* #588DCF */
+  font-weight: 600; /* font-semibold */
+}
+
+.contact-button {
+  background-color: #588dcf; /* #588DCF */
+  color: white;
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  border-radius: 0.5rem; /* rounded-lg */
+  font-weight: 600; /* font-semibold */
+  text-align: center;
+}
+
+.contact-button:hover {
+  background-color: #3b82f6; /* hover:bg-blue-500 */
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none; /* md:hidden */
+}
+
+.menu-button {
+  color: white;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.menu-icon {
+  height: 1.5rem; /* h-6 */
+  width: 1.5rem; /* w-6 */
+}
+
+@media (max-width: 767px) {
+  /* Mobile screen styles */
+  .navbar-links {
+    display: none; /* Hide the nav links on mobile */
+  }
+
+  .mobile-menu {
+    display: block; /* Show the menu icon on mobile */
+  }
+}
+
+@media (min-width: 768px) {
+  /* Tablet and larger screens */
+  .mobile-menu {
+    display: none; /* Hide the mobile menu icon */
+  }
+
+  .navbar-links {
+    display: flex; /* Show the nav links */
+  }
+}
