@@ -1,21 +1,17 @@
 import "./1_TrainingFormPage.css";
 import vector from "../images/Vector_Line.png";
 import circles from "../images/Group 458.png";
-import { countries, coursesOptions, trainingOptions } from "../Variables.js";
+import {
+  countries,
+  coursesOptions,
+  form_Object,
+  trainingOptions,
+} from "../Variables.js";
 import { useState } from "react";
 import Quote_Button from "./Buttons/Quote_Button.jsx";
 import Whatsapp_Button from "./Buttons/Whatsapp_Button.jsx";
 
 const TrainingFormPage1 = () => {
-  const form_Object = {
-    full_name: "",
-    email: "",
-    training: "",
-    course: "",
-    country: "",
-    message: "",
-  };
-
   const [formState, setFormState] = useState(form_Object);
 
   const handleForm = (e) => {

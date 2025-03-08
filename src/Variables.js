@@ -459,3 +459,12 @@ export const gridDetails = [
     logo: gridPageLogo_5,
   },
 ];
+
+export const form_Object = {
+  full_name: "",
+  email: "",
+  training: "",
+  course: "",
+  country: "",
+  message: "",
+};

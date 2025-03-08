@@ -1,20 +1,16 @@
 import "./8_Quote_Form.css";
 import vector from "../images/Vector_Line.png";
+import page_bg from "../images/Quote_Form_BG_8.png";
 
 import { useState } from "react";
-import page_bg from "../images/Quote_Form_BG_8.png";
-import { countries, coursesOptions, trainingOptions } from "../Variables";
+import {
+  countries,
+  coursesOptions,
+  form_Object,
+  trainingOptions,
+} from "../Variables";
 
 const Quote_Form_8 = () => {
-  const form_Object = {
-    full_name: "",
-    email: "",
-    training: "",
-    course: "",
-    country: "",
-    message: "",
-  };
-
   const [formState, setFormState] = useState(form_Object);
 
   const handleForm = (e) => {
