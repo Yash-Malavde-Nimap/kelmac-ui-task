@@ -1,49 +1,7 @@
-import logo1 from "../images/page_6_icons/Page_6_1.png";
-import logo2 from "../images/page_6_icons/Page_6_2.png";
-import logo3 from "../images/page_6_icons/Page_6_3.png";
-import logo4 from "../images/page_6_icons/Page_6_4.png";
-import logo5 from "../images/page_6_icons/Page_6_5.png";
 import "../Components/6_Grid_Page.css";
+import { gridDetails } from "../Variables";
 import Quote_Button from "./Buttons/Quote_Button";
 import Whatsapp_Button from "./Buttons/Whatsapp_Button";
-
-const gridDetails = [
-  {
-    id: 1,
-    title: "Greater Knowledge Transfer & Practical Application",
-    description:
-      "Employees learn best when they can connect training to their daily tasks. Our in-house programs align course content with your company's systems, policies, and workflows, ensuring that training is immediately applicable.",
-    logo: logo1,
-  },
-  {
-    id: 2,
-    title: "Stronger Teamwork & Company-Wide Alignment",
-    description:
-      "When employees train together, they develop a shared understanding of business goals, processes, and compliance requirements. This enhances collaboration, efficiency, and overall team performance.",
-    logo: logo2,
-  },
-  {
-    id: 3,
-    title: "Higher Retention & ROI on Training Investment",
-    description:
-      "Teams trained in-house retain more knowledge and engage better than those in external courses. This fosters active participation, knowledge-sharing, and higher ROI.",
-    logo: logo3,
-  },
-  {
-    id: 4,
-    title: "Industry-Specific & Custom-Designed Courses",
-    description:
-      "Your business is unique—your training should be too. We tailor courses to your industry's regulations, ISO standards, and operational needs, ensuring that training adds real your organization.",
-    logo: logo4,
-  },
-  {
-    id: 5,
-    title: "Convenience & Maximum Flexibility",
-    description:
-      "Whether your team prefers onsite, online, or hybrid training, we work around your schedule to provide a seamless learning experience. You decide when and how training happens—we make it easy.",
-    logo: logo5,
-  },
-];
 
 const Grid_Page_6 = () => {
   return (

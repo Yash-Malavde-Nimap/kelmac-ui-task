@@ -4,12 +4,12 @@
   top: 0;
   background-color: white;
   color: black;
-  padding: 0 10rem; /* px-32 */
+  padding: 0 10rem; 
   width: 100%;
   /* height: 100px; */
-  padding-top: 1rem; /* py-6 */
-  padding-bottom: 1rem; /* py-6 */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-2xl */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 999;
   opacity: 95%;
 }
@@ -29,41 +29,41 @@
 }
 
 .navbar-brand {
-  font-size: 1.5rem; /* text-2xl */
-  font-weight: 600; /* font-semibold */
+  font-size: 1.5rem;
+  font-weight: 600; 
 }
 
 .navbar-links {
   display: flex;
   list-style-type: none;
-  gap: 1.5rem; /* space-x-6 */
+  gap: 1.5rem;
 }
 
 .navbar-link {
-  font-weight: 600; /* font-semibold */
+  font-weight: 600;
 }
 
 .phone-number {
-  color: #588dcf; /* #588DCF */
-  font-weight: 600; /* font-semibold */
+  color: #588dcf;
+  font-weight: 600;
 }
 
 .contact-button {
-  background-color: #588dcf; /* #588DCF */
+  background-color: #588dcf; 
   color: white;
-  padding: 0.5rem 1rem; /* px-4 py-2 */
-  border-radius: 0.5rem; /* rounded-lg */
-  font-weight: 600; /* font-semibold */
+  padding: 0.5rem 1rem; 
+  border-radius: 0.5rem;
+  font-weight: 600; 
   text-align: center;
 }
 
 .contact-button:hover {
-  background-color: #3b82f6; /* hover:bg-blue-500 */
+  background-color: #3b82f6; 
 }
 
 /* Mobile Menu */
 .mobile-menu {
-  display: none; /* md:hidden */
+  display: none; 
 }
 
 .menu-button {
@@ -74,28 +74,28 @@
 }
 
 .menu-icon {
-  height: 1.5rem; /* h-6 */
-  width: 1.5rem; /* w-6 */
+  height: 1.5rem;
+  width: 1.5rem; 
 }
 
 @media (max-width: 767px) {
   /* Mobile screen styles */
   .navbar-links {
-    display: none; /* Hide the nav links on mobile */
+    display: none; 
   }
 
   .mobile-menu {
-    display: block; /* Show the menu icon on mobile */
+    display: block;
   }
 }
 
 @media (min-width: 768px) {
   /* Tablet and larger screens */
   .mobile-menu {
-    display: none; /* Hide the mobile menu icon */
+    display: none; 
   }
 
   .navbar-links {
-    display: flex; /* Show the nav links */
+    display: flex;
   }
 }

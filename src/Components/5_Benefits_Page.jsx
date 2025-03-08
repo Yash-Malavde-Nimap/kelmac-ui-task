@@ -49,6 +49,8 @@ const Benefits_Page_5 = () => {
                 <h2 className="page-5-title">{benefit.first}</h2>
                 <p className="page-5-subtitle">{benefit.second}</p>
               </div>
+
+              
             </div>
           </div>
         ))}

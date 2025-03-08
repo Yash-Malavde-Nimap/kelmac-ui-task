@@ -35,6 +35,11 @@ const TrainingFormPage1 = () => {
   return (
     <>
       <div className="main-body">
+        <div className="main-chat">
+          <a href="/chat">
+            <img src="../src/images/Chat_Icon.png" width={25} alt="" />
+          </a>
+        </div>
         <div className="main-container">
           <div className="circle-div">
             <img className="circle-image" src={circles} alt="" />

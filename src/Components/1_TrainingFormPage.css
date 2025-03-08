@@ -1,5 +1,5 @@
 .main-body {
-  position: relative; /* Required for positioning the pseudo-element */
+  position: relative;
   min-height: fit-content;
   display: flex;
   flex-direction: column;
@@ -7,13 +7,32 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 1; /* Background should be at the lowest z-index */
+  z-index: 1; 
 }
 
-/* Pseudo-element for the gradient */
+.main-chat {
+  position: relative;
+}
+
+.main-chat a {
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  padding: 16px;
+  background-color: #fed639; 
+  z-index: 10;
+  border-radius: 9999px; 
+}
+
+.main-chat a img {
+  width: 25px;
+  height: auto;
+}
+
+
 .main-body::before {
-  content: ""; /* Creates an empty element */
-  position: absolute; /* Absolutely positioned relative to .main-body */
+  content: "";
+  position: absolute; 
   top: 0;
   left: 0;
   right: 0;
@@ -23,8 +42,8 @@
     rgba(53, 5, 55, 0.85),
     rgba(26, 11, 43, 0.85)
   );
-  z-index: 2; /* Gradient should be above the background */
-  pointer-events: none; /* Ensures the gradient doesn't interfere with interactions */
+  z-index: 2; 
+  pointer-events: none; 
 }
 
 /* Main Container */
@@ -35,16 +54,16 @@
   padding: 0 10rem;
   align-items: center;
   padding-top: 2rem;
-  position: relative; /* Needed for z-index to work */
-  z-index: 3; /* Main content should be above the background and gradient */
+  position: relative; 
+  z-index: 3; 
 }
 
 /* Left Div */
 .left-div {
   width: 600px;
   background: transparent;
-  position: relative; /* Ensure this has positioning for z-index */
-  z-index: 4; /* Place the left div above the main container */
+  position: relative; 
+  z-index: 4; 
 }
 
 .heading_page1 {
@@ -77,7 +96,7 @@
   display: flex;
   gap: 1rem;
   margin-top: 2.2rem;
-  z-index: 5; /* Buttons should be above content but below form section */
+  z-index: 5; 
 }
 
 .quote-button,
@@ -117,7 +136,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: .4rem;
+  gap: 0.4rem;
 }
 
 .form-group {
@@ -182,8 +201,8 @@
   display: flex;
   flex-direction: column;
   padding: 4rem 10rem;
-  position: relative; /* Ensure this has positioning for z-index */
-  z-index: 6; /* Place the lower container above other content */
+  position: relative;
+  z-index: 6;
 }
 
 .lower-heading {
@@ -208,12 +227,12 @@
   top: 50px;
   left: 0px;
   background-repeat: repeat;
-  z-index: 0; /* Keep it behind other content */
+  z-index: 0; 
 }
 
 .circle-image {
   height: 100%;
   margin: 0;
   opacity: 50%;
-  z-index: 0; /* Behind other elements */
+  z-index: 0;
 }

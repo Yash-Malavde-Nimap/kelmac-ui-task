@@ -1,8 +1,16 @@
-import logo1 from "../src/images/page_5_icons/Page_5_1.png";
-import logo2 from "../src/images/page_5_icons/Page_5_2.png";
-import logo3 from "../src/images/page_5_icons/Page_5_3.png";
-import logo4 from "../src/images/page_5_icons/Page_5_4.png";
-import logo5 from "../src/images/page_5_icons/Page_5_5.png";
+// PAGE 5 ICONS
+import benefitPageLogo_1 from "../src/images/page_5_icons/Page_5_1.png";
+import benefitPageLogo_2 from "../src/images/page_5_icons/Page_5_2.png";
+import benefitPageLogo_3 from "../src/images/page_5_icons/Page_5_3.png";
+import benefitPageLogo_4 from "../src/images/page_5_icons/Page_5_4.png";
+import benefitPageLogo_5 from "../src/images/page_5_icons/Page_5_5.png";
+
+// PAGE 6 ICONS
+import gridPageLogo_1 from "../src/images/page_6_icons/Page_6_1.png";
+import gridPageLogo_2 from "../src/images/page_6_icons/Page_6_2.png";
+import gridPageLogo_3 from "../src/images/page_6_icons/Page_6_3.png";
+import gridPageLogo_4 from "../src/images/page_6_icons/Page_6_4.png";
+import gridPageLogo_5 from "../src/images/page_6_icons/Page_6_5.png";
 
 export const countries = [
   { name: "Afghanistan", value: "AF" },
@@ -374,7 +382,7 @@ export const benefits_Card = [
     description:
       "Reduce costs per participant through group pricing, making it more affordable than individual enrolments. Virtual or on-site delivery eliminates travel and accommodation expenses. Customized programs accelerate compliance and boost  efficiency. Achieve a faster return on investment with tailored, business-focused learning.",
     color: "#fe83b0",
-    logo: logo1,
+    logo: benefitPageLogo_1,
   },
   {
     id: 2,
@@ -383,7 +391,7 @@ export const benefits_Card = [
     description:
       "Our solution ensures minimal business disruption by offering flexible virtual or on-site delivery, allowing teams to learn without significant interruption. Tailored programs align with your business needs, promoting efficiency and seamless integration.",
     color: "#9d8dfb",
-    logo: logo2,
+    logo: benefitPageLogo_2,
   },
   {
     id: 3,
@@ -392,7 +400,7 @@ export const benefits_Card = [
     description:
       "Our programs are tailored specifically for your industry and team, addressing unique challenges and goals. This customized approach ensures relevant learning, improving skills and driving success within your organization.",
     color: "#6fdaf5",
-    logo: logo3,
+    logo: benefitPageLogo_3,
   },
   {
     id: 4,
@@ -401,7 +409,7 @@ export const benefits_Card = [
     description:
       "Our programs prioritize confidentiality and security, ensuring that all learning materials and participant information are protected. You can trust us to provide a safe and secure learning environment for your team.",
     color: "#ffb560",
-    logo: logo4,
+    logo: benefitPageLogo_4,
   },
   {
     id: 5,
@@ -410,6 +418,44 @@ export const benefits_Card = [
     description:
       "We offer flexible delivery options, including virtual and on-site formats, allowing you to choose the best method for your team’s needs and schedule, ensuring convenience and accessibility.",
     color: "#64d1af",
-    logo: logo5,
+    logo: benefitPageLogo_5,
+  },
+];
+
+export const gridDetails = [
+  {
+    id: 1,
+    title: "Greater Knowledge Transfer & Practical Application",
+    description:
+      "Employees learn best when they can connect training to their daily tasks. Our in-house programs align course content with your company's systems, policies, and workflows, ensuring that training is immediately applicable.",
+    logo: gridPageLogo_1,
+  },
+  {
+    id: 2,
+    title: "Stronger Teamwork & Company-Wide Alignment",
+    description:
+      "When employees train together, they develop a shared understanding of business goals, processes, and compliance requirements. This enhances collaboration, efficiency, and overall team performance.",
+    logo: gridPageLogo_2,
+  },
+  {
+    id: 3,
+    title: "Higher Retention & ROI on Training Investment",
+    description:
+      "Teams trained in-house retain more knowledge and engage better than those in external courses. This fosters active participation, knowledge-sharing, and higher ROI.",
+    logo: gridPageLogo_3,
+  },
+  {
+    id: 4,
+    title: "Industry-Specific & Custom-Designed Courses",
+    description:
+      "Your business is unique—your training should be too. We tailor courses to your industry's regulations, ISO standards, and operational needs, ensuring that training adds real your organization.",
+    logo: gridPageLogo_4,
+  },
+  {
+    id: 5,
+    title: "Convenience & Maximum Flexibility",
+    description:
+      "Whether your team prefers onsite, online, or hybrid training, we work around your schedule to provide a seamless learning experience. You decide when and how training happens—we make it easy.",
+    logo: gridPageLogo_5,
   },
 ];

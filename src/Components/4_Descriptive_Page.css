@@ -47,9 +47,9 @@
 }
 
 .page-4-main-title {
-  font-size: 24px; /* equivalent to text-2xl */
+  font-size: 24px; 
   /* line-height: 2rem; */
-  font-weight: 600; /* font-semibold */
+  font-weight: 600;
 }
 
 .page-4-subtitle {
@@ -67,12 +67,12 @@
 
 
 .page-4-detail-title {
-  font-size: 1.125rem; /* equivalent to text-lg */
-  font-weight: 600; /* font-semibold */
+  font-size: 1.125rem; 
+  font-weight: 600; 
 }
 
 .page-4-detail-description {
   font-weight: normal;
-  font-size: 0.875rem; /* equivalent to text-sm */
+  font-size: 0.875rem;
   text-align: justify;
 }

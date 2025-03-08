@@ -6,7 +6,7 @@
 .main-body-page-2 {
   min-height: 100vh;
   position: relative;
-  overflow: hidden; /* Ensures pseudo-element doesn't overflow */
+  overflow: hidden; 
 }
 
 .main-body-page-2::before {
@@ -17,9 +17,9 @@
   width: 100%;
   height: 100%;
   background: url("../images/Page_2_BG.png") no-repeat center center;
-  background-size: cover; /* Or contain depending on your preference */
-  filter: grayscale(100%); /* Grayscale effect */
-  z-index: -1; /* Ensure it's behind the content */
+  background-size: cover;
+  filter: grayscale(100%);
+  z-index: -1; 
 }
 
 .content-container {
@@ -41,8 +41,8 @@
 
 .subheading {
   margin-top: 8px;
-  font-size: 16px; /* text-xl */
-  color: #4b5563; /* text-neutral-600 */
+  font-size: 16px; 
+  color: #4b5563; 
 }
 
 .text-container {
@@ -51,7 +51,7 @@
 }
 
 .text-body {
-  font-size: 18px; /* text-xl */
+  font-size: 18px; 
   text-align: justify;
   font-weight: normal;
   /* margin-top: 1rem; */
@@ -63,9 +63,9 @@
 }
 
 .list {
-  font-size: 18px; /* text-xl */
+  font-size: 18px; 
   text-align: justify;
-  font-weight: 600; /* font-semibold */
+  font-weight: 600; 
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -92,11 +92,11 @@
 }
 
 .get-quote-btn {
-  background-color: #3b82f6; /* blue-500 */
+  background-color: #3b82f6; 
   color: white;
   padding: 8px 16px;
   border-radius: 8px;
-  font-weight: 600; /* font-semibold */
+  font-weight: 600; 
 }
 
 .whatsapp-btn {
@@ -107,8 +107,8 @@
   color: #6782ff;
   padding: 8px 16px;
   border-radius: 8px;
-  font-weight: 600; /* font-semibold */
-  border: 2px solid #d3e6fd; /* #D3E6FD */
+  font-weight: 600; 
+  border: 2px solid #d3e6fd; 
 }
 
 .top-prog-div {
@@ -118,15 +118,15 @@
 
 /* Training Program Section Title */
 .top-prog-heading {
-  font-size: 28px; /* text-3xl */
-  font-weight: 700; /* font-bold */
+  font-size: 28px;
+  font-weight: 700;
   position: relative;
 }
 
 .top-prog-image {
   position: absolute;
-  top: 3rem; /* top-10 */
+  top: 3rem; 
   left: 30px;
-  width: 295.8px; /* w-96 */
-  height: 17px; /* h-4 */
+  width: 295.8px;
+  height: 17px; 
 }
