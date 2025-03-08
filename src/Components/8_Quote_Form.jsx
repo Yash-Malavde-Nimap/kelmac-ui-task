@@ -1,4 +1,5 @@
-import './8_Quote_Form.css'
+import "./8_Quote_Form.css";
+import vector from "../images/Vector_Line.png";
 
 import { useState } from "react";
 import page_bg from "../images/Quote_Form_BG_8.png";
@@ -32,16 +33,15 @@ const Quote_Form_8 = () => {
 
   return (
     <div className="page-8-container">
-      <img
-        src={page_bg}
-        alt=""
-        className="page-8-bg"
-      />
+      <img src={page_bg} alt="" className="page-8-bg" />
 
       {/* HEADING LEFT */}
       <div className="page-8-heading-container">
         <div className="page-8-heading-text">
-          <h2 className="page-8-heading-title">Get A Quote</h2>
+          <h2 className="page-8-heading-title">
+            Get A Quote
+            <img className="page-8-highlight-vector" src={vector} alt="" />
+          </h2>
           <p className="page-8-heading-description">
             Please take the time to complete the following form and provide us
             with as much information as you are able to ensure we can deal with
@@ -77,7 +77,12 @@ const Quote_Form_8 = () => {
                 onChange={handleForm}
                 id=""
               >
-                <option value="" disabled selected className="page-8-form-option">
+                <option
+                  value=""
+                  disabled
+                  selected
+                  className="page-8-form-option"
+                >
                   Select Country
                 </option>
 
@@ -175,9 +180,7 @@ const Quote_Form_8 = () => {
             ></textarea>
           </div>
 
-          <button className="page-8-form-submit-button">
-            Submit
-          </button>
+          <button className="page-8-form-submit-button">Submit</button>
         </form>
       </div>
     </div>

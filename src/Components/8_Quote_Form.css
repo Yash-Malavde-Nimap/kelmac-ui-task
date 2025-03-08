@@ -35,8 +35,16 @@
 }
 
 .page-8-heading-title {
+  position: relative;
   font-size: 3rem; 
   font-weight: bold;
+}
+
+.page-8-highlight-vector {
+  position: absolute;
+  height: 1rem;
+  left: 15px;
+  bottom: -10px;
 }
 
 .page-8-heading-description {
@@ -118,3 +126,4 @@
 .page-8-form-submit-button:hover {
   background-color: #1d4ed8;
 }
+
