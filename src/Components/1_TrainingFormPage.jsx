@@ -5,8 +5,6 @@ import { form_Object } from "../Variables.js";
 import { useState } from "react";
 import Quote_Button from "./Buttons/Quote_Button.jsx";
 import Whatsapp_Button from "./Buttons/Whatsapp_Button.jsx";
-import Input from "./Inputs/Input.jsx";
-import Select from "./Select/Select.jsx";
 import LongForm from "./Forms/LongForm.jsx";
 
 const TrainingFormPage1 = () => {

@@ -44,7 +44,7 @@ const Benefits_Page_5 = () => {
         className={`page-5-description`}
         style={{
           background: descriptionColor,
-
+          display: `${activeCardId ? "" : "none"}`,
           borderRadius:
             activeCardId === 1
               ? "0px 12px 12px 12px"

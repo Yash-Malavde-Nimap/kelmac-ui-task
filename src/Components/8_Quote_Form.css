@@ -59,14 +59,15 @@
 .page-8-form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.3rem;
   width: 504px;
 }
 
 .page-8-2-group {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  justify-content: space-between;
+  gap: 1rem;
   /* width: 100%; */
 }
 

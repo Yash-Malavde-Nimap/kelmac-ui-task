@@ -52,6 +52,7 @@ const ShortForm = ({ handleSubmit, handleForm, formState }) => {
           optionLabel="Select Training"
         />
 
+
         <Select
           parentClass="page-8-form-select-group"
           className="page-8-form-select"

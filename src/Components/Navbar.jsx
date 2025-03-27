@@ -4,8 +4,8 @@ import kelmac_logo from "../images/kelmac_logo_2.png";
 const Navbar = () => {
   const navData = [
     {
-      href: "/home",
-      title: "Home",
+      href: "/",
+      title: `Home`,
     },
     {
       href: "/about-us",
@@ -20,6 +20,7 @@ const Navbar = () => {
       title: "Training",
     },
   ];
+
   return (
     <>
       <nav className="navbar">
@@ -34,9 +35,8 @@ const Navbar = () => {
             <div>
               <ul className="navbar-links">
                 <li className="phone-number">+91 98920 98920</li>
-
                 {navData.length > 0
-                  ? navData.map((nav,i) => (
+                  ? navData.map((nav, i) => (
                       <li key={i}>
                         <a href={nav.href} className="navbar-link">
                           {nav.title}
@@ -45,7 +45,7 @@ const Navbar = () => {
                     ))
                   : ""}
                 <li>
-                  <a href="#contact" className="contact-button">
+                  <a href="/contact" className="contact-button">
                     Contact Us
                   </a>
                 </li>
