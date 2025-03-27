@@ -381,7 +381,7 @@ export const benefits_Card = [
     second: "Training Solution",
     description:
       "Reduce costs per participant through group pricing, making it more affordable than individual enrolments. Virtual or on-site delivery eliminates travel and accommodation expenses. Customized programs accelerate compliance and boost  efficiency. Achieve a faster return on investment with tailored, business-focused learning.",
-    color: "#fe83b0",
+    color: "linear-gradient(75deg, #FF8AB6,#F65585)",
     logo: benefitPageLogo_1,
   },
   {
@@ -390,7 +390,7 @@ export const benefits_Card = [
     second: "Business Disruption",
     description:
       "Our solution ensures minimal business disruption by offering flexible virtual or on-site delivery, allowing teams to learn without significant interruption. Tailored programs align with your business needs, promoting efficiency and seamless integration.",
-    color: "#9d8dfb",
+    color: "linear-gradient(75deg, #AD9EFC,#8C7AFB)",
     logo: benefitPageLogo_2,
   },
   {
@@ -399,7 +399,7 @@ export const benefits_Card = [
     second: "Industry & Team",
     description:
       "Our programs are tailored specifically for your industry and team, addressing unique challenges and goals. This customized approach ensures relevant learning, improving skills and driving success within your organization.",
-    color: "#6fdaf5",
+    color: "linear-gradient(75deg, #87E5FC,#45C6E8)",
     logo: benefitPageLogo_3,
   },
   {
@@ -408,7 +408,7 @@ export const benefits_Card = [
     second: "Secure Learning",
     description:
       "Our programs prioritize confidentiality and security, ensuring that all learning materials and participant information are protected. You can trust us to provide a safe and secure learning environment for your team.",
-    color: "#ffb560",
+    color: "linear-gradient(75deg, #FECF9A,#FF9D2A)",
     logo: benefitPageLogo_4,
   },
   {
@@ -417,7 +417,7 @@ export const benefits_Card = [
     second: "Delivery Options",
     description:
       "We offer flexible delivery options, including virtual and on-site formats, allowing you to choose the best method for your team’s needs and schedule, ensuring convenience and accessibility.",
-    color: "#64d1af",
+    color: "linear-gradient(75deg, #A0EAD3,#36BE93)",
     logo: benefitPageLogo_5,
   },
 ];

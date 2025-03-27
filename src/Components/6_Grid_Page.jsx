@@ -10,11 +10,11 @@ const Grid_Page_6 = () => {
         <div className="page-6-grid">
           {/* 1st */}
           <div className="page-6-div-1 py-10">
-            <h2 className="page-6-number">5</h2>
-            <h2 className="page-6-title">
+            <p className="page-6-number">5</p>
+            <p className="page-6-title">
               Key <br /> Reasons <br /> to Choose <br />
               Private Training
-            </h2>
+            </p>
           </div>
 
           {/* 2 - 6 */}
@@ -34,7 +34,7 @@ const Grid_Page_6 = () => {
                 alt={item.title}
                 className="page-6-card-logo"
               />
-              <h2 className="page-6-subtitle">{item.title}</h2>
+              <p className="page-6-subtitle">{item.title}</p>
               <p className="page-6-description">{item.description}</p>
             </div>
           ))}

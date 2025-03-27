@@ -1,9 +1,9 @@
 .programme-cards-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 2.5rem 150px;
-  margin-top: -8.5rem;
+  padding: 2.5rem 8rem;
+  margin-top: -7.5rem;
   margin-bottom: 4rem;
   z-index: 1;
   position: relative;
@@ -11,13 +11,11 @@
 
 .programme-card {
   border: 1px solid #d1d5db; 
-  width: 288px;
-  height: fit-content;
-  border-radius: 1rem; 
-  margin-right: 1.5rem;
+  width: 300px;
+  height: 403px;
+  border-radius: 16px; 
   z-index: 2;
   background: white;
-  /* box-shadow: #1f2937; */
 }
 
 .card-body {
@@ -31,33 +29,34 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .card-price {
-  background-color: #e0f2fe;
+  background-color: #F3F8FF;
   color: #4b5563; 
-  padding: 0.25rem 0.5rem;
-  /* height: 30px; */
+  padding: 0.5rem;
   font-size: 14px;
-  border-radius: 0.375rem;
+  font-weight: 600;
+  border-radius: 5px;
 }
 
 .card-image {
   height: 62px;
-  /* height: auto; */
+  width: 63.61px;
 }
 
 .card-title {
-  width: 180px;
+  width: 200px;
   font-weight: bold;
-  font-size: 14px; 
-  margin-top: 0.6rem;
+  font-size: 16px; 
 }
 
 .card-category {
   font-weight: normal;
-  color: #6b7280; 
-  margin-top: 0.5rem;
+  color: #7C8493; 
+  margin-top: 0.2rem;
   font-size: 14px;
   margin-bottom: 0.5rem;
 }
@@ -69,7 +68,6 @@
 
 .card-details {
   margin-top: 1.2rem;
-  /* margin-left: 1.5rem; */
 }
 
 .card-details-list {
@@ -98,7 +96,7 @@
   /* transition: background-color 0.2s ease-in-out; */
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: .5rem;
 }
 
 /* .card-button:hover { */

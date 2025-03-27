@@ -1,7 +1,25 @@
 import "./Navbar.css";
-import kelmac_logo from "../images/kelmac_logo_2.png"
+import kelmac_logo from "../images/kelmac_logo_2.png";
 
 const Navbar = () => {
+  const navData = [
+    {
+      href: "/home",
+      title: "Home",
+    },
+    {
+      href: "/about-us",
+      title: "About",
+    },
+    {
+      href: "/courses",
+      title: "Courses",
+    },
+    {
+      href: "/training",
+      title: "Training",
+    },
+  ];
   return (
     <>
       <nav className="navbar">
@@ -16,26 +34,16 @@ const Navbar = () => {
             <div>
               <ul className="navbar-links">
                 <li className="phone-number">+91 98920 98920</li>
-                <li>
-                  <a href="#home" className="navbar-link">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="#about" className="navbar-link">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="#courses" className="navbar-link">
-                    Courses
-                  </a>
-                </li>
-                <li>
-                  <a href="#services" className="navbar-link">
-                    Training
-                  </a>
-                </li>
+
+                {navData.length > 0
+                  ? navData.map((nav,i) => (
+                      <li key={i}>
+                        <a href={nav.href} className="navbar-link">
+                          {nav.title}
+                        </a>
+                      </li>
+                    ))
+                  : ""}
                 <li>
                   <a href="#contact" className="contact-button">
                     Contact Us

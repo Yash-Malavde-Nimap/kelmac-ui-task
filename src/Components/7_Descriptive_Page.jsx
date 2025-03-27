@@ -10,16 +10,16 @@ const Descriptive_Page_7 = () => {
     <div className="page-7-container">
       <div className="page-7-content">
         <div className="page-7-text-section">
-          <h2 className="page-7-title">
+          <p className="page-7-title">
             Why Kelmac Group is the <br /> Right Training Partner for <br />
             Your Business?
-          </h2>
+          </p>
 
           <div className="page-7-item">
-            <h2 className="page-7-item-title">
+            <p className="page-7-item-title">
               <img src={logo1} alt="" width={50} height={50} />
               Certified &<br /> Accredited Courses
-            </h2>
+            </p>
             <p className="page-7-item-description">
               Our training is internationally recognised, ensuring compliance
               with ISO standards and other industry <br /> regulations.
@@ -27,10 +27,10 @@ const Descriptive_Page_7 = () => {
           </div>
 
           <div className="page-7-item">
-            <h2 className="page-7-item-title">
+            <p className="page-7-item-title">
               <img src={logo2} alt="" width={50} height={50} />
               Tailored Content <br /> That Delivers Results
-            </h2>
+            </p>
             <p className="page-7-item-description">
               We customise every course to address your company's unique needs,
               ensuring relevant and <br /> immediately applicable training.
@@ -40,10 +40,10 @@ const Descriptive_Page_7 = () => {
 
         <div className="page-7-text-section">
           <div className="page-7-item">
-            <h2 className="page-7-item-title">
+            <p className="page-7-item-title">
               <img src={logo3} alt="" width={50} height={50} />
               30+ Years <br /> of Expertise
-            </h2>
+            </p>
             <p className="page-7-item-description">
               We have trained thousands of professionals worldwide, helping
               businesses improve compliance,
@@ -52,10 +52,10 @@ const Descriptive_Page_7 = () => {
           </div>
 
           <div className="page-7-item">
-            <h2 className="page-7-item-title">
+            <p className="page-7-item-title">
               <img src={logo4} alt="" width={50} height={50} />
               Expert Instructors with <br /> Real-World Experience
-            </h2>
+            </p>
             <p className="page-7-item-description">
               Our trainers aren't just educators—they're industry professionals
               who understand your challenges and provide practical, actionable
@@ -64,10 +64,10 @@ const Descriptive_Page_7 = () => {
           </div>
 
           <div className="page-7-item">
-            <h2 className="page-7-item-title">
+            <p className="page-7-item-title">
               <img src={logo5} alt="" width={50} height={50} />
               Proven Track <br /> Record of Success
-            </h2>
+            </p>
             <p className="page-7-item-description">
               Companies that train with Kelmac Group see increased employee
               performance, compliance improvement, and better operational

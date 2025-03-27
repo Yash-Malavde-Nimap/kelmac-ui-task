@@ -1,7 +1,7 @@
 /* BenefitsPage.css */
 .page-5-container {
   height: fit-content;
-  padding: 0 10rem;
+  padding: 0 8rem;
   /* margin: ; */
   /* background:rgba(0, 0, 0, 0.714); */
 }
@@ -38,7 +38,8 @@
 
 .page-5-card {
   padding: 1.5rem;
-  width: 205.2px;
+  width: 220px;
+  height: 184px;
   overflow: hidden;
   color: white;
   cursor: pointer;
@@ -59,12 +60,14 @@
 
 .page-5-card .page-5-title {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 18px;
+  font-weight: 700;
   margin-top: 1rem;
 }
 
 .page-5-card .page-5-subtitle {
-  font-size: 1rem;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .page-5-card.active {
@@ -81,8 +84,12 @@
 .page-5-description {
   color: white;
   font-weight: normal;
-  width: 1197px;
+  width: 1264px;
+  height: 129px;
   padding: 1.5rem;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
   transition: all 0.2s ease;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 12px;

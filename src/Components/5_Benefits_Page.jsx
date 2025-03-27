@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import vector from "../images/Vector_Line.png";
 import "./5_Benefits_Page.css";
 import { benefits_Card } from "../Variables";
+import ColorCards from "./Cards/ColorCards";
 
 const Benefits_Page_5 = () => {
   const [showDesc, setShowDesc] = useState(false);
@@ -33,38 +34,12 @@ const Benefits_Page_5 = () => {
       </div>
 
       {/* COLOR CARD SECTION */}
-      <div className="page-5-cards-container">
-        {benefits_Card.map((benefit) => (
-          <div
-            key={benefit.id}
-            className={`page-5-card ${
-              activeCardId === benefit.id ? "active" : "inactive"
-            }`}
-            style={{ background: benefit.color }}
-            onClick={() => handleDesc(benefit.id)}
-          >
-            <div className="page-5-card-content">
-              <img src={benefit.logo} alt="" className="page-5-logo" />
-              <div className="page-5-card-text">
-                <h2 className="page-5-title">{benefit.first}</h2>
-                <p className="page-5-subtitle">{benefit.second}</p>
-              </div>
 
-              
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* DESCRIPTION SECTION */}
-
-      {/* ${
-          activeCardId === 1
-            ? "page-5-rounded-right"
-            : activeCardId === 5
-            ? "page-5-rounded-left"
-            : "default"
-        } */}
+      <ColorCards
+        options={benefits_Card}
+        active={activeCardId}
+        method={handleDesc}
+      />
       <div
         className={`page-5-description`}
         style={{

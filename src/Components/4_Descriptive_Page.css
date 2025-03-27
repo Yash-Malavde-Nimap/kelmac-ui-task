@@ -1,9 +1,8 @@
 .page-4-container {
   position: relative;
-  height: 100vh;
+  height: 990px;
   width: 100%;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding: 0 8rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -22,8 +21,9 @@
 
 .page-4-content-box {
   height: fit-content;
-  margin-top: 1.5rem;
-  width: 600px;
+  /* margin-top: 1.5rem; */
+  width: 752px;
+  height: fit-content;
   padding: 3rem;
   border-radius: 1rem;
   background: linear-gradient(
@@ -39,7 +39,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 1.2rem;
+  gap: 2.5rem;
 }
 
 .page-4-title-section {
@@ -47,32 +47,35 @@
 }
 
 .page-4-main-title {
-  font-size: 24px; 
-  /* line-height: 2rem; */
+  font-size: 28px;
   font-weight: 600;
+  line-height: 100%;
 }
 
 .page-4-subtitle {
-  font-weight: normal;
-  /* margin-top: 0.5rem; */
+  width: fit-content;
+  font-weight: 400;
+  letter-spacing: 0%;
+  font-size: 18px;
+  line-height: 100%;
+  margin-top: 1rem;
 }
 
 .page-4-details-section {
-  width: 420px;
+  width: 576px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2.5rem;
 }
 
-
-
 .page-4-detail-title {
-  font-size: 1.125rem; 
-  font-weight: 600; 
+  font-size: 22px;
+  font-weight: 700;
 }
 
 .page-4-detail-description {
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-align: justify;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  /* text-align: ; */
 }

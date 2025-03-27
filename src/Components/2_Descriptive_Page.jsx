@@ -3,6 +3,30 @@ import Quote_Button from "./Buttons/Quote_Button";
 import Whatsapp_Button from "./Buttons/Whatsapp_Button";
 
 const Descriptive_Page_2 = () => {
+  const descData = [
+    {
+      title:
+        "Generic content that doesn't fully align with your business goals",
+      src: "src/images/List_vectors/List_1.png",
+    },
+    {
+      title: "Inconvenient schedules that don't fit your team's availability",
+      src: "src/images/List_vectors/List_2.png",
+    },
+    {
+      title: "Additional travel costs & time away from work",
+      src: "src/images/List_vectors/List_3.png",
+    },
+    {
+      title: "Disruptions to daily business operations",
+      src: "src/images/List_vectors/List_4.png",
+    },
+    {
+      title:
+        "Lack of confidentiality when discussing company-specific challenges",
+      src: "src/images/List_vectors/List_5.png",
+    },
+  ];
   return (
     <>
       <div className="main-body-page-2">
@@ -11,9 +35,9 @@ const Descriptive_Page_2 = () => {
         <div className="content-container">
           <div className="flex-column">
             <div className="flex-column">
-              <h2 className="heading_page2">
+              <p className="heading_page2">
                 Why Choose Private & In-House Training?
-              </h2>
+              </p>
               <p className="subheading">
                 Tailored Learning That Works for Your Business
               </p>
@@ -30,49 +54,14 @@ const Descriptive_Page_2 = () => {
 
               <div className="list-container">
                 <ul className="list">
-                  <li className="list-item">
-                    <img
-                      className="list-vector"
-                      src="src\images\List_vectors\List_1.png"
-                      alt=""
-                    />
-                    Generic content that doesn't fully align with your business
-                    goals
-                  </li>
-                  <li className="list-item">
-                    <img
-                      className="list-vector"
-                      src="src\images\List_vectors\List_2.png"
-                      alt=""
-                    />
-                    Inconvenient schedules that don't fit your team's
-                    availability
-                  </li>
-                  <li className="list-item">
-                    <img
-                      className="list-vector"
-                      src="src\images\List_vectors\List_3.png"
-                      alt=""
-                    />
-                    Additional travel costs & time away from work
-                  </li>
-                  <li className="list-item">
-                    <img
-                      className="list-vector"
-                      src="src\images\List_vectors\List_4.png"
-                      alt=""
-                    />
-                    Disruptions to daily business operations
-                  </li>
-                  <li className="list-item">
-                    <img
-                      className="list-vector"
-                      src="src\images\List_vectors\List_5.png"
-                      alt=""
-                    />
-                    Lack of confidentiality when discussing company-specific
-                    challenges
-                  </li>
+                  {descData.length > 0
+                    ? descData.map((data,i) => (
+                        <li key={i} className="list-item">
+                          <img className="list-vector" src={data.src} alt="" />
+                          {data.title}
+                        </li>
+                      ))
+                    : ""}
                 </ul>
               </div>
 
@@ -89,14 +78,14 @@ const Descriptive_Page_2 = () => {
             </div>
           </div>
           <div className="top-prog-div">
-            <h2 className="top-prog-heading">
+            <p className="top-prog-heading">
               Our Top Training Programs{" "}
               <img
                 src="src\images\Vector 5.png"
                 className=" top-prog-image"
                 alt=""
               />
-            </h2>
+            </p>
           </div>
         </div>
 

@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .main-chat {
@@ -19,9 +19,9 @@
   bottom: 25px;
   right: 30px;
   padding: 16px;
-  background-color: #fed639; 
+  background-color: #fed639;
   z-index: 10;
-  border-radius: 9999px; 
+  border-radius: 9999px;
 }
 
 .main-chat a img {
@@ -29,10 +29,9 @@
   height: auto;
 }
 
-
 .main-body::before {
   content: "";
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -42,8 +41,8 @@
     rgba(53, 5, 55, 0.85),
     rgba(26, 11, 43, 0.85)
   );
-  z-index: 2; 
-  pointer-events: none; 
+  z-index: 2;
+  pointer-events: none;
 }
 
 /* Main Container */
@@ -51,26 +50,26 @@
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
-  padding: 0 10rem;
+  padding: 0 8rem;
   align-items: center;
   padding-top: 2rem;
-  position: relative; 
-  z-index: 3; 
+  position: relative;
+  z-index: 3;
 }
 
 /* Left Div */
 .left-div {
   width: 600px;
   background: transparent;
-  position: relative; 
-  z-index: 4; 
+  position: relative;
+  z-index: 4;
 }
 
 .heading_page1 {
-  font-weight: bold;
-  font-size: 3rem;
+  font-weight: 700;
+  font-size: 48px;
   color: white;
-  line-height: 3.5rem;
+  line-height: 64px;
 }
 
 .highlight {
@@ -85,10 +84,11 @@
 }
 
 .description {
-  margin-top: 2.2rem;
+  margin-top: 1.2rem;
   color: #ebf1f8;
   font-size: 20px;
-  font-weight: 400;
+  line-height: 180%;
+  font-weight: 200;
   width: 513px;
 }
 
@@ -96,7 +96,7 @@
   display: flex;
   gap: 1rem;
   margin-top: 2.2rem;
-  z-index: 5; 
+  z-index: 5;
 }
 
 .quote-button,
@@ -136,7 +136,8 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  margin-top: 3rem;
+  gap: 1rem;
 }
 
 .form-group {
@@ -147,7 +148,7 @@
 .form-label {
   color: #ebf1f8;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .form-input,
@@ -162,19 +163,24 @@
   color: #404040;
   background: #ebf1f8;
   font-size: 1rem;
+  appearance: none;
 }
 
 .form-input::placeholder,
 .form-select::placeholder,
 .form-textarea::placeholder {
-  color: #707290;
+  color: #4e5064;
 }
 
 .form-select,
 .form-input {
   margin-top: 8px;
-  color: #404040;
+  color: #4e5064;
 }
+
+/* option:disabled {
+  color: #aeb2e3;
+} */
 
 .form-textarea {
   height: 5rem;
@@ -200,7 +206,7 @@
 .lower-container {
   display: flex;
   flex-direction: column;
-  padding: 4rem 10rem;
+  padding: 4rem 8rem;
   position: relative;
   z-index: 6;
 }
@@ -217,7 +223,9 @@
 }
 
 .lower-paragraph {
+  width: 1200px;
   font-size: 20px;
+  font-weight: 400;
   text-align: justify;
   color: #d3d3d3;
 }
@@ -227,10 +235,11 @@
   top: 50px;
   left: 0px;
   background-repeat: repeat;
-  z-index: 0; 
+  z-index: 0;
 }
 
 .circle-image {
+  user-select: none;
   height: 100%;
   margin: 0;
   opacity: 50%;
