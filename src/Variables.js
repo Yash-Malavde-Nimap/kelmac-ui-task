@@ -468,3 +468,51 @@ export const form_Object = {
   country: "",
   message: "",
 };
+
+export const descData_2 = [
+  {
+    title:
+      "Generic content that doesn't fully align with your business goals",
+    src: "src/images/List_vectors/List_1.png",
+  },
+  {
+    title: "Inconvenient schedules that don't fit your team's availability",
+    src: "src/images/List_vectors/List_2.png",
+  },
+  {
+    title: "Additional travel costs & time away from work",
+    src: "src/images/List_vectors/List_3.png",
+  },
+  {
+    title: "Disruptions to daily business operations",
+    src: "src/images/List_vectors/List_4.png",
+  },
+  {
+    title:
+      "Lack of confidentiality when discussing company-specific challenges",
+    src: "src/images/List_vectors/List_5.png",
+  },
+];
+
+export const descData_4 = [
+  {
+    title: "No two businesses are the same",
+    description:
+      "So why settle for a one-size-fits-all training program? Kelmac Group's private training is designed specifically for you.",
+  },
+  {
+    title: "Customized to Your Industry & Company Process",
+    description:
+      "We take the time to understand your organization, your industry, and your unique challenges. Our courses are then tailored to focus on the specific skills and knowledge your team needs.",
+  },
+  {
+    title: "Relevant, Real-World Training",
+    description:
+      "Instead of covering theoretical concepts that may not apply to your team, our training integrates real-world scenarios, case studies, and practical exercises related to your company's operations.",
+  },
+  {
+    title: "Targeted Learning for Different Teams",
+    description:
+      "Whether you need to train senior management, internal auditors, or frontline employees, we adjust the content to ensure each group gets the most value from the session.",
+  },
+];

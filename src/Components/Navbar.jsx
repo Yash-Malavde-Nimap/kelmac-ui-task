@@ -1,4 +1,4 @@
-import "./Navbar.css";
+import "../styles/Navbar.css";
 import kelmac_logo from "../images/kelmac_logo_2.png";
 
 const Navbar = () => {

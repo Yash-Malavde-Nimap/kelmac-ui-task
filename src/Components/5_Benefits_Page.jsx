@@ -1,9 +1,26 @@
+// ################## IMPORTS #############################
+
 import { useEffect, useState } from "react";
 
+// ################### IMAGES #############################
+
 import vector from "../images/Vector_Line.png";
-import "./5_Benefits_Page.css";
+
+// ################## CSS #################################
+
+import "../styles/5_Benefits_Page.css";
+
+// ################### VARIABLES ##########################
+
 import { benefits_Card } from "../Variables";
-import ColorCards from "./Cards/ColorCards";
+
+// ################### COMPONENTS #########################
+
+import Cards from "./Cards/Cards";
+
+// ########################################################
+
+
 
 const Benefits_Page_5 = () => {
   const [showDesc, setShowDesc] = useState(false);
@@ -35,7 +52,8 @@ const Benefits_Page_5 = () => {
 
       {/* COLOR CARD SECTION */}
 
-      <ColorCards
+      <Cards
+        type="Benefits"
         options={benefits_Card}
         active={activeCardId}
         method={handleDesc}

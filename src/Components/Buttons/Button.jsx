@@ -1,5 +1,5 @@
-import './Quote_Button.css'
-import './Whatsapp_Button.css'
+import "./Quote_Button.css";
+import "./Whatsapp_Button.css";
 
 const Button = ({ type }) => {
   if (type == "Quote") {

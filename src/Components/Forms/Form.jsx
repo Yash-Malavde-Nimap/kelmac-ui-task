@@ -1,9 +1,32 @@
-import { countries, coursesOptions, trainingOptions } from "../../Variables";
+/* eslint-disable react-hooks/rules-of-hooks */
+import { useState } from "react";
+import {
+  countries,
+  coursesOptions,
+  form_Object,
+  trainingOptions,
+} from "../../Variables";
 import Input from "../Inputs/Input";
 import Select from "../Select/Select";
 
-const Form = ({ handleSubmit, formState, handleForm, type }) => {
+const Form = ({ type }) => {
   if (type == "Hero") {
+    const [formState, setFormState] = useState(form_Object);
+
+    const handleForm = (e) => {
+      const { name, value } = e.target;
+      setFormState((prevState) => ({
+        ...prevState,
+        [name]: value,
+      }));
+    };
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      console.log("Form Submitted from Top of the Page", formState);
+      setFormState(form_Object);
+    };
+
     return (
       <form onSubmit={handleSubmit} className="form">
         {/* Full Name */}
@@ -86,6 +109,21 @@ const Form = ({ handleSubmit, formState, handleForm, type }) => {
       </form>
     );
   } else if (type == "Quote") {
+    const [formState, setFormState] = useState(form_Object);
+
+    const handleForm = (e) => {
+      const { name, value } = e.target;
+      setFormState((prevState) => ({
+        ...prevState,
+        [name]: value,
+      }));
+    };
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      console.log("Form Submitted from Bottom of the Page", formState);
+      setFormState(form_Object);
+    };
     return (
       <form onSubmit={handleSubmit} className="page-8-form">
         <Input
