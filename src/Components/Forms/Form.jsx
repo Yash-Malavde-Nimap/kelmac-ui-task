@@ -8,6 +8,8 @@ import {
 } from "../../Variables";
 import Input from "../Inputs/Input";
 import Select from "../Select/Select";
+import Button from "../Buttons/Button";
+import Textarea from "../Textarea/Textarea";
 
 const Form = ({ type }) => {
   if (type == "Hero") {
@@ -90,22 +92,18 @@ const Form = ({ type }) => {
         />
 
         {/* Message */}
-        <div className="form-group">
-          <label className="form-label" htmlFor="message">
-            Message (Optional)
-          </label>
-          <textarea
-            className="form-textarea"
-            name="message"
-            value={formState.message}
-            placeholder="Write a Message"
-            onChange={handleForm}
-          />
-        </div>
+        <Textarea
+          label="Message (Optional)"
+          parentClass="form-group"
+          labelClassname="form-label"
+          className="form-textarea"
+          name="message"
+          value={formState.message}
+          placeholder="Write a Message"
+          onChange={handleForm}
+        />
 
-        <button className="submit-button" type="submit">
-          Submit
-        </button>
+        <Button type="Submit" className="submit-button" />
       </form>
     );
   } else if (type == "Quote") {
@@ -185,21 +183,18 @@ const Form = ({ type }) => {
           />
         </div>
 
-        <div className="page-8-form-input-group-full">
-          <label htmlFor="" className="page-8-form-label">
-            Message (Optional)
-          </label>
-          <textarea
-            name="message"
-            id=""
-            value={formState.message}
-            onChange={handleForm}
-            className="page-8-form-textarea"
-            placeholder="Write a Message"
-          />
-        </div>
+        <Textarea
+          label="Message (Optional)"
+          parentClass="page-8-form-input-group-full"
+          labelClassname="page-8-form-label"
+          className="page-8-form-textarea"
+          name="message"
+          value={formState.message}
+          placeholder="Write a Message"
+          onChange={handleForm}
+        />
 
-        <button className="page-8-form-submit-button">Submit</button>
+        <Button type="Submit" className="page-8-form-submit-button" />
       </form>
     );
   }

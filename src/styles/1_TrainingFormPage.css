@@ -45,7 +45,6 @@
   pointer-events: none;
 }
 
-/* Main Container */
 .main-container {
   min-height: 100vh;
   display: flex;
@@ -57,7 +56,6 @@
   z-index: 3;
 }
 
-/* Left Div */
 .left-div {
   width: 600px;
   background: transparent;
@@ -92,43 +90,6 @@
   width: 513px;
 }
 
-.button-container {
-  display: flex;
-  gap: 1rem;
-  margin-top: 2.2rem;
-  z-index: 5;
-}
-
-.quote-button,
-.whatsapp-button {
-  padding: 12px 24px;
-  font-weight: bold;
-  text-align: left;
-  border-radius: 8px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.quote-button {
-  background: #6782ff;
-  width: 150px;
-  color: white;
-  cursor: pointer;
-  transition: ease-in-out 0.2s;
-}
-
-.quote-button:hover {
-  background: #1d4ed8;
-}
-
-.whatsapp-button {
-  background-color: white;
-  color: #6782ff;
-}
-
-/* Form Section */
 .form-container {
   margin-top: 3rem;
 }
@@ -178,16 +139,11 @@
   color: #4e5064;
 }
 
-/* option:disabled {
-  color: #aeb2e3;
-} */
-
 .form-textarea {
   height: 5rem;
   margin-top: 8px;
 }
 
-/* Submit Button */
 .submit-button {
   background-color: #6782ff;
   color: white;

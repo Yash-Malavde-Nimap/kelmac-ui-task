@@ -516,3 +516,22 @@ export const descData_4 = [
       "Whether you need to train senior management, internal auditors, or frontline employees, we adjust the content to ensure each group gets the most value from the session.",
   },
 ];
+
+export const navData = [
+  {
+    href: "/",
+    title: `Home`,
+  },
+  {
+    href: "/about-us",
+    title: "About",
+  },
+  {
+    href: "/courses",
+    title: "Courses",
+  },
+  {
+    href: "/training",
+    title: "Training",
+  },
+];

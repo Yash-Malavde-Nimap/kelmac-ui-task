@@ -81,7 +81,6 @@
   width: 240px;
   display: flex;
   flex-direction: column;
-  /* gap: 0.5rem; */
 }
 
 .page-8-form-label {

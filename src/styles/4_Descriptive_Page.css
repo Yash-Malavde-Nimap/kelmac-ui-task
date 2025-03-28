@@ -21,7 +21,6 @@
 
 .page-4-content-box {
   height: fit-content;
-  /* margin-top: 1.5rem; */
   width: 752px;
   height: fit-content;
   padding: 3rem;
@@ -77,5 +76,4 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
-  /* text-align: ; */
 }

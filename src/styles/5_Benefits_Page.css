@@ -1,9 +1,6 @@
-/* BenefitsPage.css */
 .page-5-container {
   height: fit-content;
   padding: 0 8rem;
-  /* margin: ; */
-  /* background:rgba(0, 0, 0, 0.714); */
 }
 
 .page-5-header {
@@ -33,7 +30,6 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 2.5rem;
-  /* margin-top: 2.5rem; */
 }
 
 .page-5-card {
@@ -44,7 +40,6 @@
   color: white;
   cursor: pointer;
   transition: all 0.2s ease;
-  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .page-5-card img {

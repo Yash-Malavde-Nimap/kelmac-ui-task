@@ -54,12 +54,10 @@
   font-size: 18px; 
   text-align: justify;
   font-weight: normal;
-  /* margin-top: 1rem; */
 }
 
 .list-container {
   margin: 40px 0;
-  /* margin-left: 24px; */
 }
 
 .list {
@@ -69,7 +67,6 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  /* list-style-type: disc; */
 }
 
 .list-item {
@@ -81,42 +78,21 @@
 }
 
 .list-vector {
-  /* width: 30px; */
   height: 24px;
 }
 
 .button-container {
   display: flex;
-  gap: 24px;
+  gap: 20px;
   margin-top: 24px;
 }
 
-.get-quote-btn {
-  background-color: #3b82f6; 
-  color: white;
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-weight: 600; 
-}
-
-.whatsapp-btn {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background-color: white;
-  color: #6782ff;
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-weight: 600; 
-  border: 2px solid #d3e6fd; 
-}
 
 .top-prog-div {
   padding-top: 3rem;
   padding-bottom: 3.5rem;
 }
 
-/* Training Program Section Title */
 .top-prog-heading {
   font-size: 28px;
   font-weight: 700;

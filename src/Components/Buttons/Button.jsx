@@ -1,7 +1,7 @@
 import "./Quote_Button.css";
 import "./Whatsapp_Button.css";
 
-const Button = ({ type }) => {
+const Button = ({ type, className }) => {
   if (type == "Quote") {
     return <button className="quote-button">Get a Quote</button>;
   } else if (type == "Whatsapp") {
@@ -11,6 +11,8 @@ const Button = ({ type }) => {
         Whatsapp Us
       </button>
     );
+  } else if (type == "Submit") {
+    return <button className={className}>Submit</button>;
   }
 };
 
