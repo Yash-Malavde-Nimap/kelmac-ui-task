@@ -1,6 +1,5 @@
 import "../Components/2_Descriptive_Page.css";
-import Quote_Button from "./Buttons/Quote_Button";
-import Whatsapp_Button from "./Buttons/Whatsapp_Button";
+import Button from "./Buttons/Button";
 
 const Descriptive_Page_2 = () => {
   const descData = [
@@ -72,8 +71,8 @@ const Descriptive_Page_2 = () => {
               </p>
 
               <div className="button-container">
-                <Quote_Button />
-                <Whatsapp_Button />
+                <Button type="Quote" />
+                <Button type="Whatsapp" />
               </div>
             </div>
           </div>

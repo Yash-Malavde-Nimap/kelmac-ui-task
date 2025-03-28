@@ -3,12 +3,10 @@ import vector from "../images/Vector_Line.png";
 import page_bg from "../images/Quote_Form_BG_8.png";
 import { useState } from "react";
 import { form_Object } from "../Variables";
-
-import ShortForm from "./Forms/ShortForm";
+import Form from "../Components/Forms/Form.jsx";
 
 const Quote_Form_8 = () => {
   const [formState, setFormState] = useState(form_Object);
-
 
   const handleForm = (e) => {
     const { name, value } = e.target;
@@ -43,9 +41,10 @@ const Quote_Form_8 = () => {
         </div>
 
         {/* FORM */}
-        <ShortForm
-          handleForm={handleForm}
+        <Form
+          type="Quote"
           handleSubmit={handleSubmit}
+          handleForm={handleForm}
           formState={formState}
         />
       </div>

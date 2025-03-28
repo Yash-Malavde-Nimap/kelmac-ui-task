@@ -3,9 +3,8 @@ import vector from "../images/Vector_Line.png";
 import circles from "../images/Group 458.png";
 import { form_Object } from "../Variables.js";
 import { useState } from "react";
-import Quote_Button from "./Buttons/Quote_Button.jsx";
-import Whatsapp_Button from "./Buttons/Whatsapp_Button.jsx";
-import LongForm from "./Forms/LongForm.jsx";
+import Form from "../Components/Forms/Form.jsx";
+import Button from "../Components/Buttons/Button.jsx";
 
 const TrainingFormPage1 = () => {
   const [formState, setFormState] = useState(form_Object);
@@ -53,14 +52,15 @@ const TrainingFormPage1 = () => {
             </p>
 
             <div className="button-container">
-              <Quote_Button />
-              <Whatsapp_Button />
+              <Button type="Quote" />
+              <Button type="Whatsapp" />
             </div>
           </div>
 
           {/* Right Div with Form */}
           <div className="form-container">
-            <LongForm
+            <Form
+              type="Hero"
               handleSubmit={handleSubmit}
               handleForm={handleForm}
               formState={formState}

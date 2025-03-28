@@ -1,7 +1,6 @@
 import "../Components/6_Grid_Page.css";
 import { gridDetails } from "../Variables";
-import Quote_Button from "./Buttons/Quote_Button";
-import Whatsapp_Button from "./Buttons/Whatsapp_Button";
+import Button from "./Buttons/Button";
 
 const Grid_Page_6 = () => {
   return (
@@ -41,8 +40,8 @@ const Grid_Page_6 = () => {
         </div>
 
         <div className="page-6-flex-row">
-          <Quote_Button />
-          <Whatsapp_Button />
+          <Button type="Quote" />
+          <Button type="Whatsapp" />
         </div>
       </div>
     </div>

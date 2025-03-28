@@ -339,7 +339,7 @@ export const program_Cards = [
   {
     id: 1,
     price: "₹22,500",
-    name: "ISO 9001:2015 Lead Auditor Training Course",
+    name: `ISO 9001:2015 Lead Auditor Training Course`,
     category: "Quality Management",
     date: "3 March 25 to 19 March 25",
     language: "English",

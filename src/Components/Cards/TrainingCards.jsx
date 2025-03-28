@@ -12,7 +12,7 @@ const TrainingCards = ({ card }) => {
         </div>
 
         <div className="card-title-container">
-          <h2 className="card-title">{card.name}</h2>
+          <p className="card-title">{card.name}</p>
           <p className="card-category">{card.category}</p>
         </div>
 
