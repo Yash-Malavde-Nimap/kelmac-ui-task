@@ -38,7 +38,7 @@
 .page-5-card {
   padding: 1.5rem;
   width: 260px;
-  /* height: 200px; */
+  height: 200px;
   overflow: hidden;
   color: white;
   cursor: pointer;
