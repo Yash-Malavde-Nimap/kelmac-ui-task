@@ -25,21 +25,26 @@
   height: 1rem;
 }
 
-
 .page-5-cards-container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(5, 1fr);
+  gap: 2.5rem; */
+  display: flex;
   gap: 2.5rem;
+  justify-content: space-between;
+  height: 200px;
 }
 
 .page-5-card {
   padding: 1.5rem;
-  width: 220px;
-  height: 184px;
+  width: 260px;
+  /* height: 200px; */
   overflow: hidden;
   color: white;
   cursor: pointer;
   transition: all 0.2s ease;
+  /* display: fl; */
+  /* z-index: 0; */
 }
 
 .page-5-card img {
@@ -77,9 +82,10 @@
 }
 
 .page-5-description {
+  /* background-color: tra; */
   color: white;
   font-weight: normal;
-  width: 1264px;
+  width: 1265px;
   height: 129px;
   padding: 1.5rem;
   font-weight: 400;
@@ -89,6 +95,9 @@
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   margin-bottom: 6rem;
+  /* margin-top: 20px; */
+  /* z-index: 999; */
+  overflow: hidden;
 }
 
 .page-5-description.page-5-rounded-right {

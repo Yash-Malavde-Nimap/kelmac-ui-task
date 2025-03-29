@@ -4,22 +4,48 @@ const Cards = ({ type, options, active, method, card }) => {
       <div className="page-5-cards-container">
         {options.length > 0 ? (
           options.map((item) => (
-            <div
-              key={item.id}
-              className={`page-5-card ${
-                active === item.id ? "active" : "inactive"
-              }`}
-              style={{ background: item.color }}
-              onClick={() => method(item.id)}
-            >
-              <div className="page-5-card-content">
-                <img src={item.logo} alt="" className="page-5-logo" />
-                <div className="page-5-card-text">
-                  <h2 className="page-5-title">{item.first}</h2>
-                  <p className="page-5-subtitle">{item.second}</p>
+            <>
+              <div
+                key={item.id}
+                className={`page-5-card ${
+                  active === item.id ? "active" : "inactive"
+                }`}
+                style={{ background: item.color }}
+                onClick={() => method(item.id)}
+              >
+                <div className="page-5-card-content">
+                  <img src={item.logo} alt="" className="page-5-logo" />
+                  <div className="page-5-card-text">
+                    <h2 className="page-5-title">{item.first}</h2>
+                    <p className="page-5-subtitle">{item.second}</p>
+                  </div>
                 </div>
               </div>
-            </div>
+              {/* <div
+                style={{
+                  // width: "25px",
+                  height: "20px",
+                  background: "white",
+                  padding: "20px",
+                  display: `${
+                    item.id === 5
+                      ? "none"
+                      : item.id < 5 && item.id > 1
+                      ? "flex"
+                      : "none"
+                  }`,
+                  justifyContent: "center",
+                  alignItems: "end",
+                  borderBottomLeftRadius: "40px ",
+                  borderBottomRightRadius: "40px ",
+                  overflow: "hidden",
+                  marginTop: "180px",
+                  marginRight: "20px",
+                }}
+              >
+                {" "}
+              </div> */}
+            </>
           ))
         ) : (
           <></>

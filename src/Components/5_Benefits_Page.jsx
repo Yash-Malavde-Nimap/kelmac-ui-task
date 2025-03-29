@@ -20,8 +20,6 @@ import Cards from "./Cards/Cards";
 
 // ########################################################
 
-
-
 const Benefits_Page_5 = () => {
   const [showDesc, setShowDesc] = useState(false);
   const [description, setDescription] = useState("");
@@ -57,7 +55,9 @@ const Benefits_Page_5 = () => {
         options={benefits_Card}
         active={activeCardId}
         method={handleDesc}
+        descriptionColor={descriptionColor}
       />
+      
       <div
         className={`page-5-description`}
         style={{
