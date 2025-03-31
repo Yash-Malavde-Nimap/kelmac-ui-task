@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // ####################### CSS #############################
 
 import "../styles/1_TrainingFormPage.css";
@@ -42,78 +43,104 @@ import {
 
 // ################################################################
 
+// import {motion} from '@framer-motion'
+import { motion } from "framer-motion";
+import PageAnimation from "../animations/PageAnimation.jsx";
+
 const LandingPage = () => {
   return (
     <>
       {/* HERO */}
       <section>
-        <div className="main-body">
-          <div className="main-chat">
-            <a href="/chat">
-              <img src="../src/images/Chat_Icon.png" alt="" />
-            </a>
-          </div>
-          <div className="main-container">
-            <div className="circle-div">
-              <img className="circle-image" src={circles} alt="" />
+        <PageAnimation>
+          <div className="main-body">
+            <div className="main-chat">
+              <motion.a
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.8 }}
+                href="/"
+              >
+                <img src="../src/images/Chat_Icon.png" alt="" />
+              </motion.a>
+            </div>
+            <div className="main-container">
+              <div className="circle-div">
+                <img className="circle-image" src={circles} alt="" />
+              </div>
+
+              {/* Left Div */}
+              <motion.div
+                initial={{ x: -200, opacity: 0.2 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1.2 }}
+                className="left-div"
+              >
+                <p className="heading_page1">
+                  Excellence Redefined : Kelmac's Training <br /> Solutions -{" "}
+                  <span className="highlight">
+                    Tailored
+                    <img className="highlight-vector" src={vector} alt="" />
+                  </span>
+                </p>
+                <p className="description">
+                  ISO training designed around your business needs—delivered
+                  when you need it, focused on what matters, and built to
+                  deliver measurable results
+                </p>
+
+                <div className="button-container">
+                  <Button type="Quote" />
+                  <Button type="Whatsapp" />
+                </div>
+              </motion.div>
+
+              {/* Right Div with Form */}
+              <motion.div
+                initial={{ x: 200, opacity: 0.2 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1.2 }}
+                className="form-container"
+              >
+                <Form
+                  type="Hero"
+                  // handleSubmit={handleSubmit}
+                  // handleForm={handleForm}
+                  // formState={formState}
+                />
+              </motion.div>
             </div>
 
-            {/* Left Div */}
-            <div className="left-div">
-              <p className="heading_page1">
-                Excellence Redefined : Kelmac's Training <br /> Solutions -{" "}
+            {/* 2nd Container / Lower Container */}
+            <motion.div
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1.2 }}
+              className="lower-container"
+            >
+              <p className="lower-heading">
+                Excellence Redefined : <br /> Kelmac's Training Solutions -{" "}
                 <span className="highlight">
                   Tailored
                   <img className="highlight-vector" src={vector} alt="" />
                 </span>
               </p>
-              <p className="description">
-                ISO training designed around your business needs—delivered when
-                you need it, focused on what matters, and built to deliver
-                measurable results
+              <p className="lower-paragraph">
+                We address the frustration of generic training by offering
+                customized ISO solutions that focus only on your critical
+                compliance br and performance needs. Our flexible scheduling
+                ensures training happens on your timeline, minimizing disruption
+                while delivering immediate, actionable value. With expert-led
+                sessions, we empower your team to achieve lasting improvements
+                and certification success faster.
               </p>
+            </motion.div>
 
-              <div className="button-container">
-                <Button type="Quote" />
-                <Button type="Whatsapp" />
-              </div>
-            </div>
-
-            {/* Right Div with Form */}
-            <div className="form-container">
-              <Form
-                type="Hero"
-                // handleSubmit={handleSubmit}
-                // handleForm={handleForm}
-                // formState={formState}
-              />
+            <div className="circle-div">
+              <img className="circle-image" src={circles} alt="" />
             </div>
           </div>
-
-          {/* 2nd Container / Lower Container */}
-          <div className="lower-container">
-            <p className="lower-heading">
-              Excellence Redefined : <br /> Kelmac's Training Solutions -{" "}
-              <span className="highlight">
-                Tailored
-                <img className="highlight-vector" src={vector} alt="" />
-              </span>
-            </p>
-            <p className="lower-paragraph">
-              We address the frustration of generic training by offering
-              customized ISO solutions that focus only on your critical
-              compliance br and performance needs. Our flexible scheduling
-              ensures training happens on your timeline, minimizing disruption
-              while delivering immediate, actionable value. With expert-led
-              sessions, we empower your team to achieve lasting improvements and
-              certification success faster.
-            </p>
-          </div>
-
-          <div className="circle-div">
-            <img className="circle-image" src={circles} alt="" />
-          </div>
-        </div>
+        </PageAnimation>
       </section>
       {/* DESCRIPTIVE 2 */}
       <section>

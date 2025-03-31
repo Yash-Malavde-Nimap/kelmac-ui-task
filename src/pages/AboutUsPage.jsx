@@ -1,19 +1,22 @@
 import React from "react";
+import PageAnimation from "../animations/PageAnimation";
 
 const AboutUsPage = () => {
   return (
-    <div
-      style={{
-        height: "100vh",
-        background: "black",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        color: "white",
-      }}
-    >
-      About us
-    </div>
+    <PageAnimation>
+      <div
+        style={{
+          height: "100vh",
+          background: "black",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: "white",
+        }}
+      >
+        About us
+      </div>
+    </PageAnimation>
   );
 };
 
